@@ -1,7 +1,7 @@
 # Create local admin account
 $local_user = @{
-    Name                 = 'admin'
-    NoPassword           = $true
+    Name                 = 'itsadmin'
+    Password             = 'Springrain12!'  # Replace with a strong password
 }
 $user = New-LocalUser @local_user 
 $user | Set-LocalUser -PasswordNeverExpires $true 
